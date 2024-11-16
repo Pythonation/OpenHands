@@ -114,7 +114,7 @@ python3 app.py # تشغيل تطبيق Flask (مثال)
 
 
 ## التوثيق الرسمي من ترجمة مجتمع بايثون العربي:
-```markdown
+
 <div align="center">
   <a href="https://github.com/All-Hands-AI/OpenHands/graphs/contributors"><img src="https://img.shields.io/github/contributors/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="المساهمون"></a>
   <a href="https://github.com/All-Hands-AI/OpenHands/stargazers"><img src="https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="المتابعون"></a>
@@ -233,7 +233,7 @@ OpenHands هو مشروع قائم على المجتمع، ونرحب بمساه
       url={https://arxiv.org/abs/2407.16741},
 }
 ```
-```
+
 
 
 
