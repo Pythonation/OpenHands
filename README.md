@@ -1,7 +1,3 @@
-
-
-
-
 <a name="readme-top"></a>
 
 <div align="center">
@@ -20,10 +16,12 @@
 ### الخطوة ١: نواة Linux (WSL2)
 
 - **تفعيل ميزات Windows المطلوبة:**
-  ```powershell
-  dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart # تفعيل WSL
-  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart # تفعيل منصة الآلة الافتراضية
-  ```
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+  -  `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart` : يُفعّل WSL.
+  -  `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart` : يُفعّل منصة الآلة الافتراضية.
 
 - **إعادة تشغيل الجهاز**
 
@@ -31,17 +29,21 @@
 
 
 - **تعيين WSL2 كإصدار افتراضي:**
-  ```powershell
-  wsl --set-default-version 2 # تعيين الإصدار 2 من WSL كافتراضي
-  ```
+```powershell
+wsl --set-default-version 2
+```
+  -  `wsl --set-default-version 2`: يُعيّن الإصدار 2 من WSL كافتراضي.
 
 - **تثبيت توزيعة Linux (Ubuntu):** (من خلال Microsoft Store)
 
 - **التحقق من التثبيت:**
-  ```powershell
-  wsl --version    # يعرض إصدار WSL
-  wsl --list --verbose    # يعرض التوزيعات المثبتة ومعلومات عنها
-  ```
+```powershell
+wsl --version
+wsl --list --verbose
+```
+  - `wsl --version`: يعرض إصدار WSL.
+  - `wsl --list --verbose`: يعرض التوزيعات المثبتة ومعلومات عنها.
+
 
 - **إعداد Ubuntu:** (إنشاء اسم مستخدم وكلمة مرور)
 
@@ -57,60 +59,60 @@
 
 **التحقق من التكامل:**
 ```bash
-docker --version # يعرض إصدار Docker
-docker ps # يعرض الحاويات المشغلة
+docker --version
+docker ps
 ```
+  - `docker --version`: يعرض إصدار Docker.
+  - `docker ps`: يعرض الحاويات المشغلة.
 
 
 ### الخطوة ٤: تثبيت وتشغيل OpenHands
 
 - **تحميل صورة OpenHands:**
 ```bash
-docker pull docker.all-hands.dev/all-hands-ai/runtime:0.13-nikolaik # تحميل صورة Docker لـ OpenHands
+docker pull docker.all-hands.dev/all-hands-ai/runtime:0.14-nikolaik
 ```
+  - يقوم هذا الأمر بتحميل أحدث صورة  Docker لـ OpenHands (0.14-nikolaik).
+
 
 - **إنشاء مجلد للمشروع (مثال: `D:\Hello World`)**
 
 - **تحديد متغير بيئة لمسار المجلد في Ubuntu WSL:**
 ```bash
-export WORKSPACE_BASE="/mnt/d/Hello World" # تحديد مسار مجلد المشروع
+export WORKSPACE_BASE="/mnt/d/Hello World"
 ```
+  -  `export WORKSPACE_BASE="/mnt/d/Hello World"`: يُحدد مسار مجلد المشروع داخل WSL.  تأكد من تغيير المسار إلى المسار الصحيح لمجلد مشروعك.
 
 - **تشغيل OpenHands:**
 ```bash
-docker run -it --rm --pull=always \ # تشغيل حاوية Docker تفاعلية، وإزالتها بعد الإغلاق، وتحديث الصورة دائمًا
--e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.13-nikolaik \ # تحديد صورة runtime
--e SANDBOX_USER_ID=$(id -u) \ # تحديد معرف المستخدم
--e WORKSPACE_MOUNT_PATH="$WORKSPACE_BASE" \ # تحديد مسار المجلد المشترك
--v "$WORKSPACE_BASE:/opt/workspace_base:rw" \ # ربط مجلد المشروع المحلي بمجلد داخل الحاوية مع صلاحية القراءة والكتابة
--v /var/run/docker.sock:/var/run/docker.sock \ # ربط Docker socket للسماح للحاوية بالوصول إلى Docker daemon
--p 3000:3000 \ # تعيين المنفذ 3000 للحاوية إلى المنفذ 3000 على الجهاز المضيف
--p 5000:5000 \ # تعيين المنفذ 5000 للحاوية إلى المنفذ 5000 على الجهاز المضيف
--e LOG_ALL_EVENTS=true \ # تفعيل تسجيل جميع الأحداث
---add-host host.docker.internal:host-gateway \ # إضافة host entry للوصول إلى الجهاز المضيف من داخل الحاوية
---name openhands-app \ # تسمية الحاوية
-docker.all-hands.dev/all-hands-ai/openhands:0.13 # تحديد صورة OpenHands
+docker run -it --pull=always \
+    -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.14-nikolaik \
+    -e LOG_ALL_EVENTS=true \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -p 3000:3000 \
+    --add-host host.docker.internal:host-gateway \
+    --name openhands-app \
+    docker.all-hands.dev/all-hands-ai/openhands:0.14
 ```
+  -  `docker run ...`:  يشغّل حاوية Docker لتطبيق OpenHands.  لاحظ استخدام `--pull=always`  للتأكد من  استخدام أحدث صورة.
+
 
 - **فتح OpenHands في المتصفح:** `http://127.0.0.1:3000/`
 
-
-### إعدادات LLM Provider
-
-
-
-### استكمال مشروع بعد إعادة التشغيل
 
 
 
 ### التحكم بالمشروع من خلال Terminal منفصل:
 
 ```bash
-docker exec -it openhands-app bash -c "cd '/opt/workspace_base' && bash" # الدخول إلى حاوية OpenHands وتغيير المسار إلى مجلد المشروع
-python3 app.py # تشغيل تطبيق Flask (مثال)
+docker exec -it openhands-app bash -c "cd '/opt/workspace_base' && bash"
 ```
+  - `docker exec -it openhands-app bash -c "cd '/opt/workspace_base' && bash"`:  يسمح بالدخول إلى حاوية OpenHands  وتنفيذ الأوامر داخلها.  يُغير المسار إلى `/opt/workspace_base`  الذي يُمثل مجلد مشروعك داخل الحاوية.  يمكنك بعدها تشغيل الأوامر اللازمة  مثل  `python3 app.py`.
+
 
 لا تنسَ الاشتراك في القناة وتفعيل جرس التنبيهات! ❤️
+
+
 
 
 ## التوثيق الرسمي من ترجمة مجتمع بايثون العربي:
