@@ -9,13 +9,13 @@
   <h1 align="center">OpenHands: Code Less, Make More</h1>
 </div>
 
-## شاهد الشرح الكامل على يوتيوب لـ OpenHands، أداة إدارة البرمجة بالذكاء الاصطناعي!
-
-[![شاهد الفيديو](https://img.youtube.com/vi/N3byVQ4SLk8/0.jpg)](https://www.youtube.com/watch?v=N3byVQ4SLk8)
 
 
 يُحدث OpenHands ثورة في عالم البرمجة!  فهو يُمكن من إدارة البرمجة بالكامل بواسطة الذكاء الاصطناعي، من التخطيط وكتابة الأكواد إلى تنفيذ الأوامر وتصفح الويب واستدعاء الـ APIs والبحث عن حلول في StackOverflow.  إنه "مهندس برمجيات" متكامل.
 
+## شاهد الشرح الكامل على يوتيوب لـ OpenHands، أداة إدارة البرمجة بالذكاء الاصطناعي!
+
+[![شاهد الفيديو](https://img.youtube.com/vi/N3byVQ4SLk8/0.jpg)](https://www.youtube.com/watch?v=N3byVQ4SLk8)
 
 ### الخطوة ١: نواة Linux (WSL2)
 
@@ -113,42 +113,36 @@ python3 app.py # تشغيل تطبيق Flask (مثال)
 لا تنسَ الاشتراك في القناة وتفعيل جرس التنبيهات! ❤️
 
 
-
-
-
-
-
-
+## التوثيق الرسمي من ترجمة مجتمع بايثون العربي:
+```markdown
 <div align="center">
-  <a href="https://github.com/All-Hands-AI/OpenHands/graphs/contributors"><img src="https://img.shields.io/github/contributors/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="Contributors"></a>
-  <a href="https://github.com/All-Hands-AI/OpenHands/stargazers"><img src="https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="Stargazers"></a>
+  <a href="https://github.com/All-Hands-AI/OpenHands/graphs/contributors"><img src="https://img.shields.io/github/contributors/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="المساهمون"></a>
+  <a href="https://github.com/All-Hands-AI/OpenHands/stargazers"><img src="https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="المتابعون"></a>
   <a href="https://codecov.io/github/All-Hands-AI/OpenHands?branch=main"><img alt="CodeCov" src="https://img.shields.io/codecov/c/github/All-Hands-AI/OpenHands?style=for-the-badge&color=blue"></a>
-  <a href="https://github.com/All-Hands-AI/OpenHands/blob/main/LICENSE"><img src="https://img.shields.io/github/license/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="MIT License"></a>
+  <a href="https://github.com/All-Hands-AI/OpenHands/blob/main/LICENSE"><img src="https://img.shields.io/github/license/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="رخصة MIT"></a>
   <br/>
-  <a href="https://join.slack.com/t/openhands-ai/shared_invite/zt-2tom0er4l-JeNUGHt_AxpEfIBstbLPiw"><img src="https://img.shields.io/badge/Slack-Join%20Us-red?logo=slack&logoColor=white&style=for-the-badge" alt="Join our Slack community"></a>
-  <a href="https://discord.gg/ESHStjSjD4"><img src="https://img.shields.io/badge/Discord-Join%20Us-purple?logo=discord&logoColor=white&style=for-the-badge" alt="Join our Discord community"></a>
-  <a href="https://github.com/All-Hands-AI/OpenHands/blob/main/CREDITS.md"><img src="https://img.shields.io/badge/Project-Credits-blue?style=for-the-badge&color=FFE165&logo=github&logoColor=white" alt="Credits"></a>
+  <a href="https://join.slack.com/t/openhands-ai/shared_invite/zt-2tom0er4l-JeNUGHt_AxpEfIBstbLPiw"><img src="https://img.shields.io/badge/Slack-انضم%20إلينا-red?logo=slack&logoColor=white&style=for-the-badge" alt="انضم إلى مجتمعنا على Slack"></a>
+  <a href="https://discord.gg/ESHStjSjD4"><img src="https://img.shields.io/badge/Discord-انضم%20إلينا-purple?logo=discord&logoColor=white&style=for-the-badge" alt="انضم إلى مجتمعنا على Discord"></a>
+  <a href="https://github.com/All-Hands-AI/OpenHands/blob/main/CREDITS.md"><img src="https://img.shields.io/badge/البرنامج-شكر%20وتقدير-blue?style=for-the-badge&color=FFE165&logo=github&logoColor=white" alt="شكر وتقدير"></a>
   <br/>
-  <a href="https://docs.all-hands.dev/modules/usage/getting-started"><img src="https://img.shields.io/badge/Documentation-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="Check out the documentation"></a>
-  <a href="https://arxiv.org/abs/2407.16741"><img src="https://img.shields.io/badge/Paper%20on%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="Paper on Arxiv"></a>
-  <a href="https://huggingface.co/spaces/OpenHands/evaluation"><img src="https://img.shields.io/badge/Benchmark%20score-000?logoColor=FFE165&logo=huggingface&style=for-the-badge" alt="Evaluation Benchmark Score"></a>
+  <a href="https://docs.all-hands.dev/modules/usage/getting-started"><img src="https://img.shields.io/badge/التوثيق-000?logo=googledocs&logoColor=FFE165&style=for-the-badge" alt="اطلع على التوثيق"></a>
+  <a href="https://arxiv.org/abs/2407.16741"><img src="https://img.shields.io/badge/بحث%20على%20Arxiv-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="بحث على Arxiv"></a>
+  <a href="https://huggingface.co/spaces/OpenHands/evaluation"><img src="https://img.shields.io/badge/نتيجة%20المعيار-000?logoColor=FFE165&logo=huggingface&style=for-the-badge" alt="نتيجة معيار التقييم"></a>
   <hr>
 </div>
 
-Welcome to OpenHands (formerly OpenDevin), a platform for software development agents powered by AI.
+مرحبًا بكم في OpenHands (المعروف سابقًا باسم OpenDevin)، وهي منصة لعوامل تطوير البرمجيات مدعومة بالذكاء الاصطناعي.
 
-OpenHands agents can do anything a human developer can: modify code, run commands, browse the web,
-call APIs, and yes—even copy code snippets from StackOverflow.
+يمكن لعوامل OpenHands القيام بأي شيء يمكن لمطور بشري القيام به: تعديل التعليمات البرمجية، وتشغيل الأوامر، وتصفح الويب، واستدعاء واجهات برمجة التطبيقات، وحتى نسخ مقاطع التعليمات البرمجية من StackOverflow.
 
-Learn more at [docs.all-hands.dev](https://docs.all-hands.dev), or jump to the [Quick Start](#-quick-start).
+تعرف على المزيد على [docs.all-hands.dev](https://docs.all-hands.dev)، أو انتقل إلى [البدء السريع](#-البدء-السريع).
 
-![App screenshot](./docs/static/img/screenshot.png)
+![لقطة شاشة للتطبيق](./docs/static/img/screenshot.png)
 
-## ⚡ Quick Start
+## ⚡ البدء السريع
 
-The easiest way to run OpenHands is in Docker.
-See the [Installation](https://docs.all-hands.dev/modules/usage/installation) guide for
-system requirements and more information.
+أسهل طريقة لتشغيل OpenHands هي باستخدام Docker.
+راجع دليل [التثبيت](https://docs.all-hands.dev/modules/usage/installation) لمعرفة متطلبات النظام ومزيد من المعلومات.
 
 ```bash
 docker pull docker.all-hands.dev/all-hands-ai/runtime:0.14-nikolaik
@@ -163,76 +157,74 @@ docker run -it --pull=always \
     docker.all-hands.dev/all-hands-ai/openhands:0.14
 ```
 
-You'll find OpenHands running at [http://localhost:3000](http://localhost:3000)!
+ستجد OpenHands قيد التشغيل على [http://localhost:3000](http://localhost:3000)!
 
-Finally, you'll need a model provider and API key.
-[Anthropic's Claude 3.5 Sonnet](https://www.anthropic.com/api) (`anthropic/claude-3-5-sonnet-20241022`)
-works best, but you have [many options](https://docs.all-hands.dev/modules/usage/llms).
+أخيرًا، ستحتاج إلى موفر نموذج ومفتاح API.
+يعمل [Anthropic's Claude 3.5 Sonnet](https://www.anthropic.com/api) (`anthropic/claude-3-5-sonnet-20241022`) بشكل أفضل، ولكن لديك [العديد من الخيارات](https://docs.all-hands.dev/modules/usage/llms).
 
 ---
 
-You can also [connect OpenHands to your local filesystem](https://docs.all-hands.dev/modules/usage/runtimes),
-run OpenHands in a scriptable [headless mode](https://docs.all-hands.dev/modules/usage/how-to/headless-mode),
-interact with it via a [friendly CLI](https://docs.all-hands.dev/modules/usage/how-to/cli-mode),
-or run it on tagged issues with [a github action](https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/resolver/README.md).
+يمكنك أيضًا [ربط OpenHands بنظام الملفات المحلي](https://docs.all-hands.dev/modules/usage/runtimes)، وتشغيل OpenHands في [وضع بدون رأس](https://docs.all-hands.dev/modules/usage/how-to/headless-mode) قابل للبرمجة، والتفاعل معه عبر [واجهة سطر أوامر سهلة](https://docs.all-hands.dev/modules/usage/how-to/cli-mode)، أو تشغيله على المشكلات الموسومة باستخدام [إجراء github](https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/resolver/README.md).
 
-Visit [Installation](https://docs.all-hands.dev/modules/usage/installation) for more information and setup instructions.
+تفضل بزيارة [التثبيت](https://docs.all-hands.dev/modules/usage/installation) لمزيد من المعلومات وتعليمات الإعداد.
 
-If you want to modify the OpenHands source code, check out [Development.md](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md).
+إذا كنت ترغب في تعديل التعليمات البرمجية المصدر لـ OpenHands، فراجع [Development.md](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md).
 
-Having issues? The [Troubleshooting Guide](https://docs.all-hands.dev/modules/usage/troubleshooting) can help.
+هل تواجه مشكلات؟ يمكن أن يساعدك [دليل استكشاف الأخطاء وإصلاحها](https://docs.all-hands.dev/modules/usage/troubleshooting).
 
-## 📖 Documentation
 
-To learn more about the project, and for tips on using OpenHands,
-**check out our [documentation](https://docs.all-hands.dev/modules/usage/getting-started)**.
+## 📖 التوثيق
 
-There you'll find resources on how to use different LLM providers,
-troubleshooting resources, and advanced configuration options.
+لمعرفة المزيد عن المشروع، وللحصول على نصائح حول استخدام OpenHands، **راجع [التوثيق](https://docs.all-hands.dev/modules/usage/getting-started)**.
 
-## 🤝 How to Contribute
+ستجد هناك موارد حول كيفية استخدام مختلف موفري نماذج اللغات الكبيرة، وموارد استكشاف الأخطاء وإصلاحها، وخيارات التكوين المتقدمة.
 
-OpenHands is a community-driven project, and we welcome contributions from everyone.
-Whether you're a developer, a researcher, or simply enthusiastic about advancing the field of
-software engineering with AI, there are many ways to get involved:
 
-- **Code Contributions:** Help us develop new agents, core functionality, the frontend and other interfaces, or sandboxing solutions.
-- **Research and Evaluation:** Contribute to our understanding of LLMs in software engineering, participate in evaluating the models, or suggest improvements.
-- **Feedback and Testing:** Use the OpenHands toolset, report bugs, suggest features, or provide feedback on usability.
+## 🤝 كيفية المساهمة
 
-For details, please check [CONTRIBUTING.md](./CONTRIBUTING.md).
+OpenHands هو مشروع قائم على المجتمع، ونرحب بمساهمات الجميع. سواء كنت مطورًا أو باحثًا أو متحمسًا ببساطة لتطوير مجال هندسة البرمجيات بالذكاء الاصطناعي، فهناك العديد من الطرق للمشاركة:
 
-## 🤖 Join Our Community
+- **مساهمات التعليمات البرمجية:** ساعدنا في تطوير عوامل جديدة، أو وظائف أساسية، أو واجهة المستخدم الأمامية والواجهات الأخرى، أو حلول وضع الحماية.
+- **البحث والتقييم:** ساهم في فهمنا لنماذج اللغات الكبيرة في هندسة البرمجيات، وشارك في تقييم النماذج، أو اقترح تحسينات.
+- **الملاحظات والاختبار:** استخدم مجموعة أدوات OpenHands، وأبلغ عن الأخطاء، واقترح ميزات، أو قدم ملاحظات حول سهولة الاستخدام.
 
-Whether you're a developer, a researcher, or simply enthusiastic about OpenHands, we'd love to have you in our community.
-Let's make software engineering better together!
+للحصول على التفاصيل، يرجى مراجعة [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-- [Slack workspace](https://join.slack.com/t/openhands-ai/shared_invite/zt-2tom0er4l-JeNUGHt_AxpEfIBstbLPiw) - Here we talk about research, architecture, and future development.
-- [Discord server](https://discord.gg/ESHStjSjD4) - This is a community-run server for general discussion, questions, and feedback.
 
-## 📈 Progress
+## 🤖 انضم إلى مجتمعنا
+
+سواء كنت مطورًا أو باحثًا أو متحمسًا ببساطة لـ OpenHands، يسعدنا انضمامك إلى مجتمعنا. لنجعل هندسة البرمجيات أفضل معًا!
+
+- [مساحة عمل Slack](https://join.slack.com/t/openhands-ai/shared_invite/zt-2tom0er4l-JeNUGHt_AxpEfIBstbLPiw) - هنا نتحدث عن البحث والهندسة المعمارية والتطوير المستقبلي.
+- [خادم Discord](https://discord.gg/ESHStjSjD4) - هذا خادم يديره المجتمع للمناقشة العامة والأسئلة والملاحظات.
+
+
+## 📈 التقدم
 
 <p align="center">
   <a href="https://star-history.com/#All-Hands-AI/OpenHands&Date">
-    <img src="https://api.star-history.com/svg?repos=All-Hands-AI/OpenHands&type=Date" width="500" alt="Star History Chart">
+    <img src="https://api.star-history.com/svg?repos=All-Hands-AI/OpenHands&type=Date" width="500" alt="مخطط تاريخ النجوم">
   </a>
 </p>
 
-## 📜 License
 
-Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
+## 📜 الترخيص
 
-## 🙏 Acknowledgements
+موزع بموجب ترخيص MIT. راجع [`LICENSE`](./LICENSE) لمزيد من المعلومات.
 
-OpenHands is built by a large number of contributors, and every contribution is greatly appreciated! We also build upon other open source projects, and we are deeply thankful for their work.
 
-For a list of open source projects and licenses used in OpenHands, please see our [CREDITS.md](./CREDITS.md) file.
+## 🙏 شكر وتقدير
 
-## 📚 Cite
+تم بناء OpenHands بواسطة عدد كبير من المساهمين، ويتم تقدير كل مساهمة بشكل كبير! كما أننا نبني على مشاريع مفتوحة المصدر أخرى، ونحن ممتنون للغاية لعملهم.
+
+للحصول على قائمة بمشاريع المصادر المفتوحة والتراخيص المستخدمة في OpenHands، يرجى مراجعة ملف [CREDITS.md](./CREDITS.md).
+
+
+## 📚 الاستشهاد
 
 ```
 @misc{openhands,
-      title={{OpenHands: An Open Platform for AI Software Developers as Generalist Agents}},
+      title={{OpenHands: منصة مفتوحة لمطوري برامج الذكاء الاصطناعي كعوامل عامة}},
       author={Xingyao Wang and Boxuan Li and Yufan Song and Frank F. Xu and Xiangru Tang and Mingchen Zhuge and Jiayi Pan and Yueqi Song and Bowen Li and Jaskirat Singh and Hoang H. Tran and Fuqiang Li and Ren Ma and Mingzhang Zheng and Bill Qian and Yanjun Shao and Niklas Muennighoff and Yizhe Zhang and Binyuan Hui and Junyang Lin and Robert Brennan and Hao Peng and Heng Ji and Graham Neubig},
       year={2024},
       eprint={2407.16741},
@@ -241,3 +233,9 @@ For a list of open source projects and licenses used in OpenHands, please see ou
       url={https://arxiv.org/abs/2407.16741},
 }
 ```
+```
+
+
+
+
+
