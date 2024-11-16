@@ -130,6 +130,12 @@ docker exec -it openhands-app bash -c "cd '/opt/workspace_base' && bash"
 
 
 ## التوثيق الرسمي من ترجمة مجتمع بايثون العربي:
+<a name="readme-top"></a>
+
+<div align="center">
+  <img src="./docs/static/img/logo.png" alt="Logo" width="200">
+  <h1 align="center">OpenHands: Code Less, Make More</h1>
+</div>
 
 <div align="center">
   <a href="https://github.com/All-Hands-AI/OpenHands/graphs/contributors"><img src="https://img.shields.io/github/contributors/All-Hands-AI/OpenHands?style=for-the-badge&color=blue" alt="Contributors"></a>
