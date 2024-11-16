@@ -87,14 +87,27 @@ export WORKSPACE_BASE="/mnt/d/Hello World"
 ```bash
 docker run -it --pull=always \
     -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.14-nikolaik \
-    -e LOG_ALL_EVENTS=true \
+    -e SANDBOX_USER_ID=$(id -u) \
+    -e WORKSPACE_MOUNT_PATH="$WORKSPACE_BASE" \
+    -v "$WORKSPACE_BASE:/opt/workspace_base:rw" \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -p 3000:3000 \
+    -p 5000:5000 \  
+    -e LOG_ALL_EVENTS=true \
     --add-host host.docker.internal:host-gateway \
     --name openhands-app \
     docker.all-hands.dev/all-hands-ai/openhands:0.14
 ```
-  -  `docker run ...`:  يشغّل حاوية Docker لتطبيق OpenHands.  لاحظ استخدام `--pull=always`  للتأكد من  استخدام أحدث صورة.
+- `-e SANDBOX_USER_ID=$(id -u)`: يضبط مُعرّف المستخدم داخل الحاوية ليتطابق مع مُعرّف المستخدم على النظام المضيف، وهذا مهم للسماح بالوصول إلى الملفات بشكل صحيح.
+- `-e WORKSPACE_MOUNT_PATH="$WORKSPACE_BASE"`: يُحدد مسار المجلد المُشترك داخل الحاوية.
+- `-v "$WORKSPACE_BASE:/opt/workspace_base:rw"`: يربط مجلد المشروع على النظام المضيف (`$WORKSPACE_BASE`) بمجلد `/opt/workspace_base` داخل الحاوية مع صلاحيات القراءة والكتابة (`rw`).
+- `-v /var/run/docker.sock:/var/run/docker.sock`: يربط Docker socket للسماح للحاوية بالوصول إلى Docker daemon على النظام المضيف.
+- `-p 3000:3000`: يعيّن المنفذ 3000 للحاوية إلى المنفذ 3000 على النظام المضيف.
+- `-p 5000:5000`: يعيّن المنفذ 5000 للحاوية إلى المنفذ 5000 على النظام المضيف (تمت إضافته).
+- `--add-host host.docker.internal:host-gateway`: يُضيف مُدخل host للوصول إلى النظام المضيف من داخل الحاوية.
+- `--name openhands-app`: يُسمّي الحاوية بـ `openhands-app`.
+
+
 
 
 - **فتح OpenHands في المتصفح:** `http://127.0.0.1:3000/`
