@@ -13,6 +13,7 @@
 
 [![شاهد الفيديو](https://img.youtube.com/vi/N3byVQ4SLk8/0.jpg)](https://www.youtube.com/watch?v=N3byVQ4SLk8)
 
+#### ✨ الأكواد والأوامر(يتم تحديثها للنسخ الجديدة لا تقلق إذا رأيت فرق بين الفيديو وهنا!
 ### الخطوة ١: نواة Linux (WSL2)
 
 - **تفعيل ميزات Windows المطلوبة:**
